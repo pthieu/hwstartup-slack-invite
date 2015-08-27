@@ -10,28 +10,40 @@
   <header>
     <div class="container">
       <div class="row">
-      </div>
-      <div class="row">
         <div class="col-lg-12">
           <img class="img-responsive" src="img/builder.png" alt="">
           <div class="intro-text">
-            <span class="name bold underline"><%= community %></span>
-            <span class="name">Join the community on Slack!</span>
-            <hr class="star-light">
+            <p>
+              <span class="name bold underline"><%= community %></span>
+              </p>
+            <p>
+              <span class="">A community dedicated to helping the growth of hardware startups</span>
+            </p>
+            <p>
+              <span class="name">Join us on Slack!</span>
+            </p>
           </div>
         </div>
       </div>
-      <div class="col-sm-6 col-sm-offset-3">
-        <form method="POST" action="/invite" id="join-form">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="email" name="email" class="form-control" id="slack-email" placeholder="Enter your email i.e. email@company.com">
-              <span class="input-group-btn">
-                <button class="btn btn-danger" type="submit">Go!</button>
-              </span>
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          <form method="POST" action="/invite" id="join-form">
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <input type="email" name="email" class="form-control" id="slack-email" placeholder="email@company.com">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="submit">Go!</button>
+                </span>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <hr class="star-light">
+        <div class="col-xs-12">
+          <h4 class="name">Idea, Validation, Design, Prototyping, Fabrication, Manufacturing, Distribution</h4>
+        </div>
       </div>
     </div>
   </header>
