@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Join the community on Slack!</title>
+  <link href="/styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Join the  community on Slack!</h1>
+  <form method="POST" action="/invite" id="join-form">
+    <input type="text" name="email" placeholder="Enter your email" id="slack-email">
+  </form>
+  <script>
+  var form = document.getElementById('join-form');
+  var email = document.getElementById('slack-email')
+  form.addEventListener('submit', function(evt) {
+    if (!email.value) {
+      evt.preventDefault();
+    }
+  });
+  </script>
+</body>
+
+</html>
